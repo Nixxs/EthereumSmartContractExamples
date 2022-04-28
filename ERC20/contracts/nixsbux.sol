@@ -7,6 +7,7 @@ contract nixsbux is ERC20 {
     address public admin;
     
     constructor() ERC20("NIXS BUX", "NIX"){
+        admin = msg.sender;
         _mint(msg.sender, 500 * 10 ** 18);
     }
 
