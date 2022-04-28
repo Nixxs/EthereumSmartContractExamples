@@ -1,10 +1,10 @@
 {
   "_format": "hh-sol-cache-2",
   "files": {
-    "D:\\Development\\EthereumSmartContractExamples\\ERC20\\contracts\\nixsbux.sol": {
-      "lastModificationDate": 1651158618289,
-      "contentHash": "ac841bd7bb11654d3e1aa5ec5850f568",
-      "sourceName": "contracts/nixsbux.sol",
+    "D:\\Development\\EthereumSmartContractExamples\\ERC20\\contracts\\nixbux.sol": {
+      "lastModificationDate": 1651163612902,
+      "contentHash": "bfcf1a532f936699873d7e9e6ed9a2c4",
+      "sourceName": "contracts/nixbux.sol",
       "solcConfig": {
         "version": "0.8.4",
         "settings": {
@@ -35,7 +35,7 @@
         "^0.8.4"
       ],
       "artifacts": [
-        "nixsbux"
+        "nixbux"
       ]
     },
     "D:\\Development\\EthereumSmartContractExamples\\ERC20\\node_modules\\@openzeppelin\\contracts\\token\\ERC20\\ERC20.sol": {
