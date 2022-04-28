@@ -1,19 +1,19 @@
 async function main(){
-    //const address = "0xb588dfadfdbce8820861c1e08b58f1364e58a1f5"
     const address = "0x48bab1e48de0Fcdc857D64a5A512F3A1196156a5"
     const contract = await ethers.getContractAt("nixsbux", address);
 
-    console.log(contract);
+    const name = await contract.name();
+    const symbol = await contract.symbol();
+    const myBalance = await contract.balanceOf("0xf1e2B7FbBd5811d896Bdbcf610b87B435826C41d");
+    const totalSupply = await contract.totalSupply();
 
-    //const name = await contract.name();
-    var symbol = await contract.name();
-    // const myBalance = await contract.balanceOf("0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266");
-    // const totalSupply = await contract.totalSupply();
+    console.log(name);
+    console.log(symbol);
 
-    //console.log(name);
-    // console.log(symbol);
-    // console.log("My Balance: ", myBalance.toNumber());
-    // console.log("Total Token Supply: ", totalSupply.toNumber());
+    // this will come back as token base units which is large so we convert back down
+    // to get normal token units
+    console.log("My Token Balance: ", Number(myBalance.toString()) / (10**18));
+    console.log("Total Token Supply: ", Number(totalSupply.toString()) / (10**18));
 }
 
 main();
