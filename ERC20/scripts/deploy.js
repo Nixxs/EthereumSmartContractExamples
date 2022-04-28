@@ -5,10 +5,10 @@ async function main() {
     console.log("Account balance:", (await deployer.getBalance()).toString());
 
     // Get the ContractFactories and Signers here.
-    const TokenContract = await ethers.getContractFactory("nixsbux");
+    const TokenContract = await ethers.getContractFactory("nixbux");
     const contract = await TokenContract.deploy();
 
-    console.log("Token Contract Address", contract.address);
+    console.log("Token Contract Address ", contract.address);
 }
 
 main();

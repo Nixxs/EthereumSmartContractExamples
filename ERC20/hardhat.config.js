@@ -13,7 +13,9 @@ module.exports = {
   networks: {
     matic: {
       url: "https://polygon-rpc.com",
-      accounts: [process.env.PRIVATE_KEY]
+      accounts: [process.env.PRIVATE_KEY],
+      gas: "auto", 
+      gasPrice: "auto"
     },
     ethereum: {
       url: "https://mainnet.infura.io/v3/9aa3d95b3bc440fa88ea12eaa4456161",

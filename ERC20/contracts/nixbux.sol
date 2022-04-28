@@ -3,10 +3,10 @@ pragma solidity ^0.8.4;
 
 import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
 
-contract nixsbux is ERC20 {
+contract nixbux is ERC20 {
     address public admin;
     
-    constructor() ERC20("NIXS BUX", "NIX"){
+    constructor() ERC20("NIX BUX", "NIX"){
         admin = msg.sender;
         _mint(msg.sender, 500 * 10 ** 18);
     }
