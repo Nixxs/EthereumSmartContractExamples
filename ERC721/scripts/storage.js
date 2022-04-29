@@ -4,7 +4,6 @@ var fs = require('fs');
 
 async function storeAsset(_name, _description, _image_path, _properties){
     const client = new NFTStorage({token: [process.env.NFTSTORAGE_API_KEY]});
-    // const {fs} = require("fs");
     console.log(`uploading asset: ${_image_path}`);
     const metadata = await client.store({
         name: _name,
