@@ -349,3 +349,4 @@ MigrationBackup/
 
 # Ionide (cross platform F# VS Code tools) working folder
 .ionide/
+ERC721/cache/solidity-files-cache.json
