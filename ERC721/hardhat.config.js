@@ -11,7 +11,7 @@ module.exports = {
     cache: "./cache",
   },
   networks: {
-    matic: {
+    polygon: {
       url: "https://polygon-rpc.com",
       accounts: [process.env.PRIVATE_KEY],
       gas: "auto", 

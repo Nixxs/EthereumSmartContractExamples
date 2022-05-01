@@ -4,10 +4,10 @@ pragma solidity ^0.8.4;
 import "@openzeppelin/contracts/token/ERC721/extensions/ERC721URIStorage.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
 
-contract NFT is ERC721URIStorage, Ownable{
+contract TestNFT is ERC721URIStorage, Ownable{
     uint public tokenCount;
 
-    constructor() ERC721("EOR NFT", "EOR"){}
+    constructor() ERC721("TEST NFT", "TNFT"){}
 
     function mint(string memory _tokenURI) external onlyOwner returns(uint){
         tokenCount += 1;

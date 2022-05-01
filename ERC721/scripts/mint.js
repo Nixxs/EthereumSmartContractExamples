@@ -1,6 +1,6 @@
 async function main(){
     const address = "0x9fE46736679d2D9a65F0992F2272dE9f3c7fa6e0"
-    const contract = await ethers.getContractAt("NFT", address);
+    const contract = await ethers.getContractAt("TestNFT", address);
 
     var tokenCount = await contract.tokenCount();
     var name = await contract.name();
